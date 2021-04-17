@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+<section>
+    <div class="row">
+        <div class="col-md-5">
+            <article>
+                <h2>Знакомства.ru</h2>
+                <P>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis exercitationem porro,
+                    id pariatur vel facere molestiae, cumque illo modi officiis inventore.
+                    Similique labore quasi temporibus odit tempore minus maxime nulla. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Perferendis exercitationem porro,
+                    id pariatur vel facere molestiae, cumque illo modi officiis inventore.
+                    Similique labore quasi temporibus odit tempore minus maxime nulla.
+                </P>
+            </article>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-3">
+            <div class="login">
+                <form action="/login">
+                    <input type="phone" placeholder="Телефон" name="phone">
+                    <input type="password" placeholder="Пароль" name="password">
+                    <button type="submit"><h5>Войти</h5></button>
+                    <a href="/forgot_password"><h5>Забыл пароль</h5></a>
+                </form>
+            </div>
+            <div class="registration">
+                <form action="/registation">
+                    <input type="phone" placeholder="Телефон" name="phone">
+                    <input type="password" placeholder="Пароль" name="password">
+                    <input type="password" placeholder="Пароль" name="resend_password">
+                    <input type="text" placeholder="Имя" name="name">
+                    <input type="text" placeholder="Фамилия" name="surname">
+                    <button type="submit"><h5>Зарегистрироваться</h5></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
