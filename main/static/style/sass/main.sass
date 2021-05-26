@@ -1,0 +1,397 @@
+body
+    background-color: #f2e4bb
+
+section
+    min-height: calc(100vh - 170px)
+
+$text_color: #59484d
+$hover_text_color: #000
+
+@font-face
+    font-family: "roboto-black"
+    src: url("../fonts/Roboto-Black.ttf")
+    font-family: "roboto-bold"
+    src: url("../fonts/Roboto-Bold.ttf")
+    font-family: "roboto-light"
+    src: url("../fonts/Roboto-Light.ttf")
+    font-family: "roboto-medium"
+    src: url("../fonts/Roboto-Medium.ttf")
+    font-family: "roboto-regular"
+    src: url("../fonts/Roboto-Regular.ttf")
+
+
+// ===========HEADER============
+
+header
+    height: 80px
+    background-color: #f2a663
+    ul
+        margin: 0
+        margin-top: 40px
+        list-style: none
+        li 
+            display: inline-block
+            margin-left: 35px
+            a
+                text-decoration: none
+                h5 
+                    font-family: roboto-medium
+                    color: $text_color
+                    font-size: 25px
+
+            a:hover
+                text-decoration: none
+                h5 
+                    color: $text_color 
+                    font-family: roboto-bold
+        li:first-child
+            margin-left: 0px
+        button
+            border: 0px
+            background-color: #f2a663
+            h3  
+                margin: 0
+                font-family: roboto-bold
+                color: $text_color
+                font-size: 25px
+        button:hover
+            h3
+                color: $hover_text_color
+
+
+
+
+            
+
+
+// ===========INDEX=============
+
+.login__section
+    display: none
+    #close__login
+        float: right
+        margin-right: 25px
+        color: $text_color
+    #close__login:hover
+        color: $hover_text_color
+    .login
+        margin-top: 30px
+        border-radius: 20px
+        width: 100%
+        height: 305px
+        background-color: #f2a663
+        input
+            height: 60px
+            width: 93%
+            margin: 20px
+            background-color: #f2e4bb
+            margin-top: 10px
+            border-radius: 15px
+        input[placeholder]
+            font-size: 20px
+        ul
+            padding: 0
+            margin: 10px 0 0 5px
+            list-style: none
+        li
+            display: inline-block
+        .right
+            float: right
+            margin-right: 10px
+        button
+            border: none
+            background-color: #f2a663
+        .button
+            text-decoration: none
+            h5 
+                color: $text_color
+                font-size: 30px
+                font-family: roboto-black
+                text-align: right
+        .button:hover
+            h5
+                color: #000
+
+
+.register__section
+    display: none
+    #close__reg
+        border: none
+        background-color: #f2a663
+        float: right
+        margin-right: 25px
+        color: $text_color
+    #close__reg:hover
+        color: $hover_text_color
+    .registration
+        margin-top: 30px
+        border-radius: 20px
+        width: 100%
+        margin-top: 25px
+        height: 390px
+        background-color: #f2a663
+        h5 
+            margin: 5px 0 0 0
+            color: $text_color
+            font-size: 24px
+            font-family: roboto-medium
+            text-align: center
+        input
+            height: 60px
+            width: 93%
+            margin: 20px
+            background-color: #f2e4bb
+            margin-top: 10px
+            border-radius: 15px
+        input[placeholder]
+            font-size: 20px
+        .button
+            float: right
+            margin-right: 20px
+            border: none
+            background-color: #f2a663
+            h5 
+                color: $text_color
+                font-size: 30px
+                font-family: roboto-black
+                margin-left: 40px
+        .button:hover
+            h5
+                color: $hover_text_color
+
+
+
+.wrapper
+    margin-top: 40px
+
+.content__section
+    display: block
+    article
+        h2
+            color: $text_color
+            font-size: 36px
+            font-family: roboto-bold
+        p
+            color: $text_color
+            font-size: 24px
+            font-family: roboto-medium
+
+
+
+//============HOME=============
+
+.home
+    .container
+        margin-top: 30px
+    .img__wrapper
+        max-width: 100%
+        img
+            width: 100%
+    .person__info
+        max-width: 100%
+        height: 140px
+        background-color: #f2a663
+        h3
+            color: $text_color
+            font-size: 28px
+            font-family: roboto-black
+            padding-top: 10px
+            margin-left: 20px
+            margin-bottom: 0
+        h4
+            color: $text_color
+            font-size: 24px
+            font-family: roboto-black
+            margin-left: 20px
+            margin-bottom: 0
+        p
+            color: $text_color
+            font-size: 20px
+            font-family: roboto-black
+            padding-top: 0px
+            margin-left: 20px
+    .wrapper
+        background-color: #59484d
+        margin-top: 0px
+        button
+            margin: 0
+            padding: 0
+            background-color: #f2695c
+            border: none
+            width: 177.08px
+            height: 80px
+            h4
+                color: $text_color
+                font-size: 24px
+                font-family: roboto-black
+                margin: 0
+        button:hover
+            background-color: #fa4c3c
+            h4
+                color: $hover_text_color
+
+//===============CABINET=================
+
+.cabinet
+    .container
+        margin-top: 30px
+    .info
+        .img__wrapper
+            max-width: 80%
+            img
+                width: 100%
+        .person__info
+            h1
+                color: $text_color
+                font-size: 30px
+                font-family: roboto-black
+                margin: 0
+        .form__update
+            input
+                height: 35px
+                width: 240px
+                margin-left: 11px
+                background-color: #f2e4bb
+                margin-top: 10px
+                border-radius: 15px
+                padding-left: 15px
+            input::placeholder
+                color: $text_color
+                font-size: 20px
+            button
+                margin-left: 10px
+                height: 35px
+                width: 120px
+                border: none
+                background-color: #f2a663
+                h5 
+                    margin: 0
+                    color: $text_color
+                    font-size: 20px
+                    font-family: roboto-black
+            button:hover
+                h5
+                    color: $hover_text_color
+
+
+
+//===============COMMUNICATION=============
+
+.communication
+    .container
+        margin-top: 30px
+    .dialog__name
+        text-align: center
+        h3
+            color: $text_color
+            font-size: 36px
+            font-family: roboto-black
+    #dialog
+        border-radius: 30px
+        background-color: #f2e4ca
+        overflow-y: auto
+        height: 450px
+        .message__block
+            background-color: #f2a663
+            border-radius: 10px
+            margin-top: 2px
+            padding: 5px
+            max-width: 390px
+            h5
+                color: $text_color
+                font-size: 18px
+                font-family: roboto-black
+            p
+                color: $text_color
+                font-size: 16px
+                font-family: roboto-medium
+            h6 
+                color: $text_color
+                font-size: 16px
+                font-family: roboto-black
+        .message__to
+            float: left
+            left: 10px
+            width: 80%
+        .message__from
+            float: right
+            right: 10px
+            width: 80%
+    #textarea
+        border-radius: 15px
+        margin-top: 25px
+        width: 100%
+        padding: 10px
+        outline: none
+    #send__msg
+        float: right
+        width: 200px
+        height: 40px
+        background-color: #f2a663
+        border-radius: 10px
+        margin-top: 2px
+        h3
+            color: $text_color
+            font-size: 30px
+            font-family: roboto-black
+    #send__msg:hover
+        h3 
+            color: $hover_text_color
+
+
+//===============MESSAGE============
+.message
+    .container
+        margin-top: 10px
+    .message__people
+        text-align: center
+        h3
+            color: $text_color
+            font-size: 36px
+            font-family: roboto-black
+    .message__him
+        margin-top: 10px
+        border-radius: 15px
+        padding: 10px
+        width: 100%
+        background-color: #f2a663
+        button
+            width: 100%
+            background-color: #f2a663
+            border: 0px
+            h4
+                color: $text_color
+                font-size: 30px
+                font-family: roboto-black
+        button:hover
+            background-color: #f2e4bb
+            border-radius: 10px
+            h4
+                color: $hover_text_color
+    .wrapper__content
+        width: 100%
+        .left
+            width: 20%
+            float: left
+            img
+                width: 100px
+                height: auto
+        .right
+            width: 80%
+            float: right
+            h5
+                color: $text_color
+                font-size: 24px
+                font-family: roboto-black
+            p
+                color: $text_color
+                font-size: 22px
+                font-family: roboto-medium   
+
+
+//===============FOOTER==============
+
+footer 
+    margin-top: 20px
+    height: 80px
+    background-color: #f2a663

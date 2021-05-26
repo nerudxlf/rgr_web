@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="cabinet">
+    <div class="container">
+        <div class="row info">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <div class="img__wrapper">
+                    <img src="{{ url_for('static', filename=photo) }}" alt="photo">
+                </div>
+                <div class="person__info">
+                    <h1>Здравствуйте {{ user.u_name }}</h1>
+                </div>
+            </div>
+            <div class="col-md-5 form__update">
+                <h3>Обновите свои данные</h3>
+                <form action="/update_name" method="post">
+                    <input type="text" placeholder="{{ user.u_name }}" name="name"><button><h5>Обновить</h5></button>
+                </form>
+                <form action="/update_surname" method="post">
+                    <input type="text" placeholder="{{ user.u_surname }}" name="surname"><button><h5>Обновить</h5></button>
+                </form>
+                <form action="/update_age" method="post">
+                    <input type="text" placeholder="{{ user.u_age }}" name="age"><button><h5>Обновить</h5></button>
+                </form>
+                <form action="/update_gender" method="post">
+                    <input type="text" placeholder="{{ user.u_gender }}" name="gender"><button><h5>Обновить</h5></button>
+                </form>
+                <form action="/update_city" method="post">
+                    <input type="text" placeholder="{{ user.u_city }}" name="city"><button><h5>Обновить</h5></button>
+                </form>
+                <form action="/update_about" method="post">
+                    <input type="text" placeholder="{{ user.u_about }}" name="city"><button><h5>Обновить</h5></button>
+                </form>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</section>
+{% endblock %}

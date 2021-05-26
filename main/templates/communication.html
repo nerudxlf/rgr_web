@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="communication">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 dialog__name">
+                <h3>Ваш диалог с  {{ user.u_name }} </h3>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8" id="dialog">
+                {% for message in all_message %}
+                {% if message.m_to_user != user.id %}
+                    <div class="message__to  message__block">
+                        <h5>{{ user.u_name }}</h5>
+                        <p>{{ message.m_text }}</p>
+                        <h6>{{ message.m_datetime }}</h6>
+                    </div>
+                {% else %}
+                    <div class="message__from message__block">
+                        <h5>{{ g.user.u_name }}</h5>
+                        <p>{{ message.m_text }}</p>
+                        <h6>{{ message.m_datetime }}</h6>
+                    </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <textarea name="text_msg" id="textarea" cols="80" rows="5" placeholder="Ваше сообщение"></textarea>
+                <button type="submit" value="{{ user.id }}" name="user_id" id="send__msg"><h3>Отправить</h3></button>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</section>
+<script src="{{url_for('static', filename='js/send_msg.js')}}"></script>
+{% endblock %}

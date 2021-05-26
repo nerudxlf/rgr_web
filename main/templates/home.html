@@ -1,4 +1,46 @@
 {% extends "base.html" %}
-{% block content %}
 
+{% block content %}
+<section class="home">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="img__wrapper">
+                    <img src="{{url_for('static', filename=photo)}}" alt="#" id="img__user">
+                </div>
+                <div class="person__info">
+                    {% if person %}
+                    <h3 id="name">{{ person.u_name }} {{ person.u_surname }}</h3>
+                    <h4 id="age">Возраст: {{ person.u_age }}</h4>
+                    <p id="about">Инфо: {{ person.u_about }}</p>
+                    {% else %}
+                    <h3>Люди закончились</h3>
+                    {% endif %}
+                </div>
+                {% if person %}
+                <div class="wrapper">
+                    <button value="{{ person.id }}" id="dislike" name="dislike">
+                        <h4>
+                            Не нравится
+                        </h4>
+                    </button>
+                    <button value="{{ person.id }}" id="skip" name="skip">
+                        <h4>
+                            Пропустить
+                        </h4>
+                    </button>
+                    <button value="{{ person.id }}" id="like" name="like">
+                        <h4>
+                            Нравится
+                        </h4>
+                    </button>
+                </div>
+                {% endif %}
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</section>
+<script src="{{url_for('static', filename='js/match.js')}}"></script>
 {% endblock %}

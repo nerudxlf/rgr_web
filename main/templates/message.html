@@ -1,4 +1,38 @@
 {% extends "base.html" %}
 {% block content %}
-
+<section class="message">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="message__people">
+                    <h3>Вы можете написать этим людям:</h3>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        {% for user in users %}
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="message__him">
+                    <div class="wrapper__content">
+                        <div class="left">
+                            <img src="{{ url_for('static', filename=photos[user.id]) }}" alt="#">
+                        </div>
+                        <div class="right">
+                            <h5>{{ user.u_name }} {{ user.u_surname }}</h5>
+                            <p>{{ user.u_about }}</p>
+                        </div>
+                    </div>
+                    <form method="POST">
+                        <button type="submit" value="{{ user.id }}" name="write_message"><h4>Написать</h4></button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
 {% endblock %}

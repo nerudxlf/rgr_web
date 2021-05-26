@@ -1,41 +1,73 @@
 {% extends "base.html" %}
 {% block content %}
-<section>
-    <div class="row">
-        <div class="col-md-5">
-            <article>
-                <h2>Знакомства.ru</h2>
-                <P>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis exercitationem porro,
-                    id pariatur vel facere molestiae, cumque illo modi officiis inventore.
-                    Similique labore quasi temporibus odit tempore minus maxime nulla. Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Perferendis exercitationem porro,
-                    id pariatur vel facere molestiae, cumque illo modi officiis inventore.
-                    Similique labore quasi temporibus odit tempore minus maxime nulla.
-                </P>
-            </article>
-        </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-3">
-            <div class="login">
-                <form action="/login">
-                    <input type="phone" placeholder="Телефон" name="phone">
-                    <input type="password" placeholder="Пароль" name="password">
-                    <button type="submit"><h5>Войти</h5></button>
-                    <a href="/forgot_password"><h5>Забыл пароль</h5></a>
-                </form>
+<section class="login__section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="login">
+                    <button id="close__login"><h1>x</h1></button>
+                    <form action="/login" method="POST">
+                        <input type="text" placeholder="Телефон" name="phone">
+                        <input type="password" placeholder="Пароль" name="password">
+                        <ul>
+                            <li class="left">
+                                <button type="submit" class="button"><h5>Войти</h5></button>
+                            <li class="right">
+                                <a href="/forgot_password" class="button"><h5>Забыл пароль</h5></a>
+                        </ul>
+                    </form>
+                </div>
             </div>
-            <div class="registration">
-                <form action="/registation">
-                    <input type="phone" placeholder="Телефон" name="phone">
-                    <input type="password" placeholder="Пароль" name="password">
-                    <input type="password" placeholder="Пароль" name="resend_password">
-                    <input type="text" placeholder="Имя" name="name">
-                    <input type="text" placeholder="Фамилия" name="surname">
-                    <button type="submit"><h5>Зарегистрироваться</h5></button>
-                </form>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</section>
+<section class="register__section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="registration">
+                    <button id="close__reg"><h1>x</h1></button>
+                    <form action="/info" method="POST">
+                        <input type="phone" placeholder="Телефон" name="phone">
+                        <input type="password" placeholder="Пароль" name="password">
+                        <input type="password" placeholder="Пароль" name="password_repeat">
+                        <button type="submit" class="button"><h5>Зарегистрироваться</h5></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    </div>
+</section>
+
+<section class="content__section">
+    <div class="container">
+        <div class="row wrapper">
+            <div class="col-md-5">
+                <article>
+                    <h2>Знакомства.ru</h2>
+                    <P>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis exercitationem porro,
+                        id pariatur vel facere molestiae, cumque illo modi officiis inventore.
+                        Similique labore quasi temporibus odit tempore minus maxime nulla. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Perferendis exercitationem porro,
+                        id pariatur vel facere molestiae, cumque illo modi officiis inventore.
+                        Similique labore quasi temporibus odit tempore minus maxime nulla.
+                    </P>
+                </article>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+                <div class="img__wrapper">
+                    <img src="{{ url_for('static', filename='/photo/img/index-img.png') }}" alt="">
+                </div>
             </div>
         </div>
     </div>
 </section>
+<script src="{{url_for('static', filename='js/forms.js')}}"></script>
 {% endblock %}

@@ -1,0 +1,441 @@
+body {
+  background-color: #f2e4bb;
+}
+
+section {
+  min-height: calc(100vh - 170px);
+}
+
+@font-face {
+  font-family: "roboto-black";
+  src: url("../fonts/Roboto-Black.ttf");
+  font-family: "roboto-bold";
+  src: url("../fonts/Roboto-Bold.ttf");
+  font-family: "roboto-light";
+  src: url("../fonts/Roboto-Light.ttf");
+  font-family: "roboto-medium";
+  src: url("../fonts/Roboto-Medium.ttf");
+  font-family: "roboto-regular";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+header {
+  height: 80px;
+  background-color: #f2a663;
+}
+header ul {
+  margin: 0;
+  margin-top: 40px;
+  list-style: none;
+}
+header ul li {
+  display: inline-block;
+  margin-left: 35px;
+}
+header ul li a {
+  text-decoration: none;
+}
+header ul li a h5 {
+  font-family: roboto-medium;
+  color: #59484d;
+  font-size: 25px;
+}
+header ul li a:hover {
+  text-decoration: none;
+}
+header ul li a:hover h5 {
+  color: #59484d;
+  font-family: roboto-bold;
+}
+header ul li:first-child {
+  margin-left: 0px;
+}
+header ul button {
+  border: 0px;
+  background-color: #f2a663;
+}
+header ul button h3 {
+  margin: 0;
+  font-family: roboto-bold;
+  color: #59484d;
+  font-size: 25px;
+}
+header ul button:hover h3 {
+  color: #000;
+}
+
+.login__section {
+  display: none;
+}
+.login__section #close__login {
+  float: right;
+  margin-right: 25px;
+  color: #59484d;
+}
+.login__section #close__login:hover {
+  color: #000;
+}
+.login__section .login {
+  margin-top: 30px;
+  border-radius: 20px;
+  width: 100%;
+  height: 305px;
+  background-color: #f2a663;
+}
+.login__section .login input {
+  height: 60px;
+  width: 93%;
+  margin: 20px;
+  background-color: #f2e4bb;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+.login__section .login input[placeholder] {
+  font-size: 20px;
+}
+.login__section .login ul {
+  padding: 0;
+  margin: 10px 0 0 5px;
+  list-style: none;
+}
+.login__section .login li {
+  display: inline-block;
+}
+.login__section .login .right {
+  float: right;
+  margin-right: 10px;
+}
+.login__section .login button {
+  border: none;
+  background-color: #f2a663;
+}
+.login__section .login .button {
+  text-decoration: none;
+}
+.login__section .login .button h5 {
+  color: #59484d;
+  font-size: 30px;
+  font-family: roboto-black;
+  text-align: right;
+}
+.login__section .login .button:hover h5 {
+  color: #000;
+}
+
+.register__section {
+  display: none;
+}
+.register__section #close__reg {
+  border: none;
+  background-color: #f2a663;
+  float: right;
+  margin-right: 25px;
+  color: #59484d;
+}
+.register__section #close__reg:hover {
+  color: #000;
+}
+.register__section .registration {
+  margin-top: 30px;
+  border-radius: 20px;
+  width: 100%;
+  margin-top: 25px;
+  height: 390px;
+  background-color: #f2a663;
+}
+.register__section .registration h5 {
+  margin: 5px 0 0 0;
+  color: #59484d;
+  font-size: 24px;
+  font-family: roboto-medium;
+  text-align: center;
+}
+.register__section .registration input {
+  height: 60px;
+  width: 93%;
+  margin: 20px;
+  background-color: #f2e4bb;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+.register__section .registration input[placeholder] {
+  font-size: 20px;
+}
+.register__section .registration .button {
+  float: right;
+  margin-right: 20px;
+  border: none;
+  background-color: #f2a663;
+}
+.register__section .registration .button h5 {
+  color: #59484d;
+  font-size: 30px;
+  font-family: roboto-black;
+  margin-left: 40px;
+}
+.register__section .registration .button:hover h5 {
+  color: #000;
+}
+
+.wrapper {
+  margin-top: 40px;
+}
+
+.content__section {
+  display: block;
+}
+.content__section article h2 {
+  color: #59484d;
+  font-size: 36px;
+  font-family: roboto-bold;
+}
+.content__section article p {
+  color: #59484d;
+  font-size: 24px;
+  font-family: roboto-medium;
+}
+
+.home .container {
+  margin-top: 30px;
+}
+.home .img__wrapper {
+  max-width: 100%;
+}
+.home .img__wrapper img {
+  width: 100%;
+}
+.home .person__info {
+  max-width: 100%;
+  height: 140px;
+  background-color: #f2a663;
+}
+.home .person__info h3 {
+  color: #59484d;
+  font-size: 28px;
+  font-family: roboto-black;
+  padding-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+.home .person__info h4 {
+  color: #59484d;
+  font-size: 24px;
+  font-family: roboto-black;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+.home .person__info p {
+  color: #59484d;
+  font-size: 20px;
+  font-family: roboto-black;
+  padding-top: 0px;
+  margin-left: 20px;
+}
+.home .wrapper {
+  background-color: #59484d;
+  margin-top: 0px;
+}
+.home .wrapper button {
+  margin: 0;
+  padding: 0;
+  background-color: #f2695c;
+  border: none;
+  width: 177.08px;
+  height: 80px;
+}
+.home .wrapper button h4 {
+  color: #59484d;
+  font-size: 24px;
+  font-family: roboto-black;
+  margin: 0;
+}
+.home .wrapper button:hover {
+  background-color: #fa4c3c;
+}
+.home .wrapper button:hover h4 {
+  color: #000;
+}
+
+.cabinet .container {
+  margin-top: 30px;
+}
+.cabinet .info .img__wrapper {
+  max-width: 80%;
+}
+.cabinet .info .img__wrapper img {
+  width: 100%;
+}
+.cabinet .info .person__info h1 {
+  color: #59484d;
+  font-size: 30px;
+  font-family: roboto-black;
+  margin: 0;
+}
+.cabinet .info .form__update input {
+  height: 35px;
+  width: 240px;
+  margin-left: 11px;
+  background-color: #f2e4bb;
+  margin-top: 10px;
+  border-radius: 15px;
+  padding-left: 15px;
+}
+.cabinet .info .form__update input::placeholder {
+  color: #59484d;
+  font-size: 20px;
+}
+.cabinet .info .form__update button {
+  margin-left: 10px;
+  height: 35px;
+  width: 120px;
+  border: none;
+  background-color: #f2a663;
+}
+.cabinet .info .form__update button h5 {
+  margin: 0;
+  color: #59484d;
+  font-size: 20px;
+  font-family: roboto-black;
+}
+.cabinet .info .form__update button:hover h5 {
+  color: #000;
+}
+
+.communication .container {
+  margin-top: 30px;
+}
+.communication .dialog__name {
+  text-align: center;
+}
+.communication .dialog__name h3 {
+  color: #59484d;
+  font-size: 36px;
+  font-family: roboto-black;
+}
+.communication #dialog {
+  border-radius: 30px;
+  background-color: #f2e4ca;
+  overflow-y: auto;
+  height: 450px;
+}
+.communication #dialog .message__block {
+  background-color: #f2a663;
+  border-radius: 10px;
+  margin-top: 2px;
+  padding: 5px;
+  max-width: 390px;
+}
+.communication #dialog .message__block h5 {
+  color: #59484d;
+  font-size: 18px;
+  font-family: roboto-black;
+}
+.communication #dialog .message__block p {
+  color: #59484d;
+  font-size: 16px;
+  font-family: roboto-medium;
+}
+.communication #dialog .message__block h6 {
+  color: #59484d;
+  font-size: 16px;
+  font-family: roboto-black;
+}
+.communication #dialog .message__to {
+  float: left;
+  left: 10px;
+  width: 80%;
+}
+.communication #dialog .message__from {
+  float: right;
+  right: 10px;
+  width: 80%;
+}
+.communication #textarea {
+  border-radius: 15px;
+  margin-top: 25px;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+.communication #send__msg {
+  float: right;
+  width: 200px;
+  height: 40px;
+  background-color: #f2a663;
+  border-radius: 10px;
+  margin-top: 2px;
+}
+.communication #send__msg h3 {
+  color: #59484d;
+  font-size: 30px;
+  font-family: roboto-black;
+}
+.communication #send__msg:hover h3 {
+  color: #000;
+}
+
+.message .container {
+  margin-top: 10px;
+}
+.message .message__people {
+  text-align: center;
+}
+.message .message__people h3 {
+  color: #59484d;
+  font-size: 36px;
+  font-family: roboto-black;
+}
+.message .message__him {
+  margin-top: 10px;
+  border-radius: 15px;
+  padding: 10px;
+  width: 100%;
+  background-color: #f2a663;
+}
+.message .message__him button {
+  width: 100%;
+  background-color: #f2a663;
+  border: 0px;
+}
+.message .message__him button h4 {
+  color: #59484d;
+  font-size: 30px;
+  font-family: roboto-black;
+}
+.message .message__him button:hover {
+  background-color: #f2e4bb;
+  border-radius: 10px;
+}
+.message .message__him button:hover h4 {
+  color: #000;
+}
+.message .wrapper__content {
+  width: 100%;
+}
+.message .wrapper__content .left {
+  width: 20%;
+  float: left;
+}
+.message .wrapper__content .left img {
+  width: 100px;
+  height: auto;
+}
+.message .wrapper__content .right {
+  width: 80%;
+  float: right;
+}
+.message .wrapper__content .right h5 {
+  color: #59484d;
+  font-size: 24px;
+  font-family: roboto-black;
+}
+.message .wrapper__content .right p {
+  color: #59484d;
+  font-size: 22px;
+  font-family: roboto-medium;
+}
+
+footer {
+  margin-top: 20px;
+  height: 80px;
+  background-color: #f2a663;
+}

@@ -3,3 +3,6 @@ __pycache__
 *.ini
 .idea
 *.db
+fonts
+main/static/img
+main/static/fonts

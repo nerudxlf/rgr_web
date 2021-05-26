@@ -10,8 +10,8 @@ app.config['SQLALCHEMY_DATABASE_URI'] = config.get("FILES", "DATABASE")
 app.config['ALLOWED_EXTENSIONS'] = set(['png', 'jpeg', 'jpg'])
 app.secret_key = config.get("DEFAULT", "SECRET_KEY")
 db = SQLAlchemy(app)
-#manager = LoginManager(app)
+manager = LoginManager(app)
 
-from main import routs
+from main import routs, db_worker
 
 db.create_all()
