@@ -62,6 +62,9 @@ header ul button h3 {
 header ul button:hover h3 {
   color: #000;
 }
+header .logo {
+  margin-top: 50px;
+}
 
 .login__section {
   display: none;
@@ -193,12 +196,19 @@ header ul button:hover h3 {
   font-size: 24px;
   font-family: roboto-medium;
 }
+.content__section .img__wrapper {
+  width: 100%;
+}
+.content__section .img__wrapper img {
+  max-width: 100%;
+  height: auto;
+}
 
 .home .container {
   margin-top: 30px;
 }
 .home .img__wrapper {
-  max-width: 100%;
+  width: 100%;
 }
 .home .img__wrapper img {
   width: 100%;
@@ -434,8 +444,86 @@ header ul button:hover h3 {
   font-family: roboto-medium;
 }
 
+.set__info {
+  margin-top: 10px;
+}
+.set__info .example-2 .btn-tertiary {
+  color: #555;
+  padding: 0;
+  line-height: 40px;
+  width: 300px;
+  margin: auto;
+  display: block;
+  border: 2px solid #555;
+}
+.set__info .example-2 .btn-tertiary:hover, .set__info .example-2 .example-2 .btn-tertiary:focus {
+  color: #888;
+  border-color: #888;
+}
+.set__info .example-2 .input-file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.set__info .example-2 .input-file + .js-labelFile {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.set__info .example-2 .input-file + .js-labelFile.has-file .icon:before {
+  color: #5AAC7B;
+}
+.set__info .input {
+  color: #555;
+  padding: 3px;
+  line-height: 40px;
+  width: 300px;
+  margin: auto;
+  margin-top: 10px;
+  display: block;
+  border: 2px solid #555;
+  border-radius: 5px;
+}
+.set__info .radio {
+  display: block;
+  margin-top: 15px;
+  margin-left: 150px;
+}
+.set__info textarea {
+  color: #555;
+  padding: 3px;
+  line-height: 40px;
+  width: 500px;
+  height: 90px;
+  margin: auto;
+  margin-top: 10px;
+  display: block;
+  border: 2px solid #555;
+  border-radius: 5px;
+}
+.set__info button {
+  color: #555;
+  padding: 3px;
+  line-height: 40px;
+  width: 300px;
+  margin: auto;
+  margin-top: 10px;
+  display: block;
+  border: 2px solid #555;
+  border-radius: 5px;
+}
+
 footer {
-  margin-top: 20px;
+  margin-top: 10px;
   height: 80px;
   background-color: #f2a663;
+}
+footer h5 {
+  margin-top: 10px;
+  text-align: center;
 }

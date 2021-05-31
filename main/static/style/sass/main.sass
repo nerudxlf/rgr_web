@@ -57,6 +57,9 @@ header
         button:hover
             h3
                 color: $hover_text_color
+    .logo
+        margin-top: 50px
+
 
 
 
@@ -175,7 +178,11 @@ header
             color: $text_color
             font-size: 24px
             font-family: roboto-medium
-
+    .img__wrapper
+        width: 100%
+        img
+            max-width: 100%
+            height: auto
 
 
 //============HOME=============
@@ -184,7 +191,7 @@ header
     .container
         margin-top: 30px
     .img__wrapper
-        max-width: 100%
+        width: 100%
         img
             width: 100%
     .person__info
@@ -386,12 +393,85 @@ header
             p
                 color: $text_color
                 font-size: 22px
-                font-family: roboto-medium   
+                font-family: roboto-medium
 
 
+//===============SET_INFO===============
+
+.set__info
+    margin-top: 10px
+    .example-2
+        .btn-tertiary
+            color: #555
+            padding: 0
+            line-height: 40px
+            width: 300px
+            margin: auto
+            display: block
+            border: 2px solid #555
+    .example-2 
+        .btn-tertiary:hover, .example-2 .btn-tertiary:focus
+            color: #888
+            border-color: #888
+    .example-2
+        .input-file
+            width: .1px 
+            height: .1px 
+            opacity: 0 
+            overflow: hidden 
+            position: absolute 
+            z-index: -1
+    .example-2 
+        .input-file + .js-labelFile 
+            overflow: hidden 
+            text-overflow: ellipsis 
+            white-space: nowrap
+            padding: 0 10px
+            cursor: pointer
+    .example-2 
+        .input-file + .js-labelFile.has-file .icon:before 
+            color: #5AAC7B
+    .input
+        color: #555
+        padding: 3px
+        line-height: 40px
+        width: 300px
+        margin: auto
+        margin-top: 10px
+        display: block
+        border: 2px solid #555
+        border-radius: 5px
+    .radio
+        display: block
+        margin-top: 15px
+        margin-left: 150px
+    textarea
+        color: #555
+        padding: 3px
+        line-height: 40px
+        width: 500px
+        height: 90px
+        margin: auto
+        margin-top: 10px
+        display: block
+        border: 2px solid #555
+        border-radius: 5px   
+    button
+        color: #555
+        padding: 3px
+        line-height: 40px
+        width: 300px
+        margin: auto
+        margin-top: 10px
+        display: block
+        border: 2px solid #555
+        border-radius: 5px  
 //===============FOOTER==============
 
 footer 
-    margin-top: 20px
+    margin-top: 10px
     height: 80px
     background-color: #f2a663
+    h5
+        margin-top: 10px
+        text-align: center

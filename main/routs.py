@@ -249,7 +249,6 @@ def communication():
     user_id = request.args.get('id')
     user = User.query.filter_by(id=user_id).first()
     all_message = get_message(user.id)
-    print(all_message)
     return render_template('communication.html', title_name="Сообщения", user=user, all_message=all_message)
 
 

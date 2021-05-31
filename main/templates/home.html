@@ -20,6 +20,7 @@
                 </div>
                 {% if person %}
                 <div class="wrapper">
+                    {% if person %}
                     <button value="{{ person.id }}" id="dislike" name="dislike">
                         <h4>
                             Не нравится
@@ -35,6 +36,7 @@
                             Нравится
                         </h4>
                     </button>
+                    {% endif %}
                 </div>
                 {% endif %}
             </div>
